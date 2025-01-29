@@ -1,0 +1,25 @@
+.header_button {
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    background: var(--background-color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+}
+
+.speedometerContainer {
+// padding-top: 30px;
+}
+
+.editedStatusNameContainer p {
+    font-size: 24px;
+    font-family: DM Sans, sans-serif;
+}
+
+.editedStatusNameContainer {
+    display: flex;
+    justify-content: center;
+}

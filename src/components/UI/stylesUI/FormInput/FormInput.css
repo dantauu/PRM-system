@@ -1,0 +1,149 @@
+.FormInput {
+  margin-top: 32px;
+}
+
+.FormInput__title {
+  display: flex;
+  align-items: center;
+}
+.FormInput__title__text {
+  color: var(--blue-first);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+  margin-bottom: 0px;
+}
+.FormInput__title .important {
+  color: var(--text-color-three, #4318FF);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+.inputCountainer {
+  margin-top: 13px;
+  justify-content: space-between;
+  position: relative;
+  border: transparent;
+  transition: border 0.2s;
+  border: 1px solid var(--input-border);
+  border-radius: 10px;
+  height: 50px;
+  width: 410px;
+  background-color: var(--background-first);
+  padding-bottom: 50px;
+  transition: all 0.5s;
+}
+.inputCountainer:focus-within {
+  border: 1px solid var(--input-border-active);
+}
+@media (max-width: 1880px) {
+  .inputCountainer {
+    width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .inputCountainer {
+    width: 220px;
+  }
+}
+
+.FormInput-input {
+  color: var(--input-color);
+  font-weight: 400;
+  font-size: 16px;
+  height: 48px;
+  background-color: var(--background-first);
+  padding-left: 20px;
+  margin-bottom: 0px;
+  padding-right: 20px;
+  border: transparent;
+  transition: border 0.2s;
+  border-radius: 16px;
+  outline: none;
+  width: 100%;
+}
+.FormInput-input::-webkit-calendar-picker-indicator {
+  padding: 5px;
+  cursor: pointer;
+  color: #FFF;
+  border-radius: 3px;
+}
+.FormInput-input::-moz-placeholder {
+  color: var(--nav-list-disable);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+.FormInput-input::placeholder {
+  color: var(--nav-list-disable);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  color: #FFF;
+  filter: var(--date-picker);
+}
+
+.text_show {
+  height: 15px;
+  width: 22px;
+  margin-right: 18px;
+  background-image: url("../../../../assets/UI/eye.svg");
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.text_show::before {
+  content: "";
+  width: 2px;
+  height: 18px;
+  transition: all 0.5s;
+  background-color: #4A607A;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  top: -12%;
+}
+
+.text_hide {
+  height: 15px;
+  width: 22px;
+  margin-right: 18px;
+  background-image: url("../../../../assets/UI/eye.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.5s;
+  position: relative;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.text_hide::before {
+  content: "";
+  width: 2px;
+  height: 0px;
+  transition: all 0.5s;
+  background-color: #4A607A;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+
+#FormInput-input-date {
+  margin-top: 50px;
+}/*# sourceMappingURL=FormInput.css.map */

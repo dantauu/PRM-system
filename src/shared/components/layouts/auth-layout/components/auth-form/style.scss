@@ -1,0 +1,49 @@
+.auth-form {
+  &__text {
+    margin-bottom: 1.5rem;
+    
+    font-family: "DM Sans", sans-serif;
+  }
+
+  &__title {
+    color: var(--registration-title);
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px; /* 155.556% */
+    letter-spacing: -0.72px;
+  }
+
+  &__subtitle {
+    color: var(--nav-list-disable);
+    font-size: 16px;
+    line-height: 100%; /* 16px */
+    letter-spacing: -0.32px;
+  }
+
+  &__under-form {
+    margin-top: 24px;
+  }
+
+  &__button {
+    margin-top: 24px;
+  }
+
+  &__link {
+    margin-top: 24px;
+
+    color: var(--blue-first);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: -0.28px;
+
+    a {
+      color: var(--registration-title);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+}

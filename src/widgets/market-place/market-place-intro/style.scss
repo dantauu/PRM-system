@@ -1,0 +1,150 @@
+.market-place-intro {
+  position: relative;
+
+  width: 100%;
+  border-radius: 20px;
+  padding: 64px;
+  overflow: hidden;
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 96px 48px 48px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 120px 16px 16px;
+  }
+
+  // Bg
+  &__bg-wrapper {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(#22134E, #170630);
+  }
+
+  &__bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+  }
+
+  @media screen and (max-width: 576px) {
+    &__bg-wrapper {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: linear-gradient(0deg, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.5) 100%);
+      }
+    }
+    
+    &__bg-image {
+      object-position: center right;
+    } 
+  }
+
+  // Text
+  &__text {
+    max-width: 450px;
+  }
+
+  &__title {
+    color: #fff;
+    font-family: DM Sans, sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+  }
+
+  &__subtitle {
+    margin-top: 12px;
+
+    color: #E3DAFF;
+    font-family: DM Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__text {
+      max-width: 400px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &__subtitle {
+      margin-top: 4px;
+    };
+  }
+
+  @media screen and (max-width: 576px) {
+    &__text {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 20px;
+    };
+  }
+
+  // Buttons
+  &__buttons {
+    margin-top: 48px;
+
+    display: flex;
+  }
+
+  &__white-button {
+    background-color: #fff;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+
+    color: #000;
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__buttons {
+      margin-top: 24px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &__buttons {
+      margin-top: 16px;
+    }
+
+    &__white-button {
+      flex: 1;
+    }
+  }
+}

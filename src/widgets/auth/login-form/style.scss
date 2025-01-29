@@ -1,0 +1,22 @@
+.login-form {
+  max-width: 500px;
+
+  &__under-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__remember-me {
+    color: var(--registration-title);
+  }
+
+  &__forgot-password {
+    color: var(--registration-title);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+  }
+}

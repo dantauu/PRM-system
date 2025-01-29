@@ -1,0 +1,13 @@
+.edit-profile {
+  &__error {
+    margin-top: 20px;
+
+    color: var(--nav-list-disable)
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    
+    display: flex;
+  }
+}

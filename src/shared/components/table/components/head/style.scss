@@ -1,0 +1,27 @@
+.head {
+  width: 100%;
+  margin: 0 -12px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  &__item {
+    flex: 1 0;
+    min-width: 200px;
+
+    border-bottom: 1px solid var(--line-one);
+    padding: 8px 12px 12px;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--nav-list-disable);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+  }
+
+  &__sort-button {
+    margin-left: 6px;
+  }
+}

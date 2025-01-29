@@ -1,0 +1,11 @@
+.page-title {
+  color: var(--blue-first);
+  font-family: DM Sans, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.68px;
+
+  @media screen and (max-width: 1400px) {
+    font-size: 24px;
+  }
+}

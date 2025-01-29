@@ -1,0 +1,20 @@
+.my-table {
+  overflow-x: auto;
+
+  padding-bottom: 12px;
+
+  display: flex;
+  flex-direction: column;
+  
+  &::-webkit-scrollbar {
+    height: 12px;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color-line);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--background-color-four);
+  }
+}

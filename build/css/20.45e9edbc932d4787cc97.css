@@ -1,0 +1,5 @@
+.login-form{max-width:500px}.login-form__under-form{display:flex;align-items:center;justify-content:space-between}.login-form__remember-me{color:var(--registration-title)}.login-form__forgot-password{color:var(--registration-title);font-family:"DM Sans",sans-serif;font-size:14px;font-weight:500;line-height:20px;letter-spacing:-0.28px}
+.register-form__terms{display:flex;color:var(--blue-first)}.register-form__terms>*:first-child{margin-right:12px}
+.reset-password-form{max-width:500px}.reset-password-form__connect-us{color:var(--registration-title);font-family:"DM Sans",sans-serif;font-size:14px;font-weight:500;line-height:20px;letter-spacing:-0.28px}
+
+/*# sourceMappingURL=20.45e9edbc932d4787cc97.css.map*/

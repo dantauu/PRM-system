@@ -1,0 +1,66 @@
+.landing-section {
+  position: relative;
+  z-index: 0;
+  
+  width: 100vw;
+  max-width: 1616px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1600px) {
+    max-width: calc(100vw - 48px);
+  }
+
+  @media screen and (max-width: 425px) {
+    max-width: calc(100vw - 32px);
+  }
+
+  // No Margin
+  &--no-margin {
+    max-width: none;
+    margin: 0;
+  }
+
+  & &--no-margin {
+    margin: 0 calc(0px - calc(calc(100vw - 1600px) / 2));
+    
+    @media screen and (max-width: 1600px) {
+      margin: 0 -24px;
+    }
+    
+    @media screen and (max-width: 425px) {
+        margin: 0 -16px;
+    }
+  }
+
+  // Use Paddings
+  &--use-paddings {
+    max-width: none;
+    margin: 0;
+    padding: 0 calc(calc(100vw - 1600px) / 2);
+    
+    @media screen and (max-width: 1600px) {
+      padding: 0 24px;
+    }
+    
+    @media screen and (max-width: 425px) {
+      padding: 0 16px;
+    }
+  }
+
+  &__anchor {
+    visibility: hidden;
+  }
+
+  // Use Default Margin Top
+  &--use-default-mt {
+    margin-top: 200px;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 160px;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-top: 120px;
+    }
+  }
+}

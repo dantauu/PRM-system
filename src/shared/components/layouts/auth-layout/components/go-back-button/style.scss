@@ -1,0 +1,40 @@
+.go-back-button {
+  position: relative;
+  width: max-content;
+  padding: 4px 4px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--nav-list-disable);
+  text-decoration: none;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: var(--nav-list-disable);
+    border-radius: 8px;
+    opacity: 0;
+
+    transition: 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0.2;
+  }
+
+  &__text {
+    margin: 0 4px;
+  }
+}

@@ -1,0 +1,23 @@
+.communication-active-status-form {
+  &__script {
+    margin-bottom: 16px;
+  }
+
+  &__buttons {
+    margin-bottom: 16px;
+
+    display: flex;
+
+    &>* {
+      margin-right: 12px;
+    }
+  }
+
+  &__note {
+    color: var(--text-color-secondary);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,26 @@
+.response-view {
+  &__section {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-header {
+    padding: 4px 0;
+  }
+
+  &__result-description {
+    display: block;
+    
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__section-footer {
+    margin-top: 8px;
+
+    display: flex;
+  }
+}

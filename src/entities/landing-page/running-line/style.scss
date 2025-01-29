@@ -1,0 +1,60 @@
+.running-line {
+  &__marquee {
+    opacity: 0.3
+  }
+
+  &--no-opacity &__marquee {
+    opacity: 1;
+  }
+
+  &--reverse &__marquee {
+    background: linear-gradient(180deg, #CF83FF 0%, #7A54FF 100%);
+  }
+
+  &__item {
+    background: linear-gradient(180deg, #CF83FF 0%, #6A4BFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-left: 5vw;
+
+    font-family: 'RoadRadio', sans-serif;
+    font-size: 86px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &--reverse &__item {
+    color: #000 !important;
+    font-style: normal;
+    -webkit-text-fill-color: #000;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-top: -53px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 46px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__title {
+      margin-top: -41px;
+      
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__title {
+      margin-top: -37px;
+      
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.Blob {
+  z-index: 99;
+}
+.Blob img {
+  z-index: 1;
+  width: 469px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}/*# sourceMappingURL=Blob.css.map */
+
+.Blob:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  
+  width: 720px;
+  height: 720px;
+
+  border-radius: 720px;
+  background: linear-gradient(180deg, #183398 0%, #322B54 70.14%);
+
+  filter: blur(300px);
+}

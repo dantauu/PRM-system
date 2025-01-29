@@ -1,0 +1,15 @@
+.select {
+
+
+}
+
+[data-theme='dark'] {
+  .input__input {
+    background-color: transparent;
+    color: white;
+  }
+  option {
+    background-color: #111C44;
+    color: white;
+  }
+}

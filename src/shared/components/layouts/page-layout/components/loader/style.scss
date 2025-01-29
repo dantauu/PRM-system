@@ -1,0 +1,18 @@
+.loader {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .spinner-border {
+    width: 64px;
+    height: 64px;
+
+    border-width: 6px;
+    border-top-color: var(--blue-first);
+    border-bottom-color: var(--blue-first);
+    border-left-color: var(--blue-first);
+  }
+}

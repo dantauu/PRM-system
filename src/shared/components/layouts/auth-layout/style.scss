@@ -1,0 +1,41 @@
+.auth-layout {
+  background-color: var(--background-color-four);
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  
+  display: flex;
+
+  // Main
+  &__main {
+    flex: 1;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    align-self: center;
+    flex: 1;
+
+    max-width: 860px;
+    padding: 24px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // Aside
+  &__aside {
+    flex: 1;
+
+    padding-bottom: 24px;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

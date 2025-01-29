@@ -1,0 +1,18 @@
+.landing-faq {
+  &__title {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -53px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 46px;
+  }
+
+  &__accordion {
+    max-width: 1000px;
+    margin: 80px auto 0;
+  }
+}

@@ -1,0 +1,88 @@
+.landing-ref-sign-up {
+  padding-top: 135px;
+  padding-bottom: 280px;
+
+  @media screen and (max-width: 1040px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 150px;
+  }
+  @media screen and (max-width: 600px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @media screen and (max-width: 400px) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+
+  &__button {
+    max-width: calc(100vw - 32px);
+    margin: 124px auto 0;
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 1040px) {
+      margin: 90px auto 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 50px auto 0;
+    }
+  }
+
+  &__marquee {
+    opacity: 0.3
+  }
+
+  &--no-opacity &__marquee {
+    opacity: 1;
+  }
+
+  &--reverse &__marquee {
+    background: linear-gradient(180deg, #CF83FF 0%, #7A54FF 100%);
+  }
+
+  &__item {
+    background: linear-gradient(180deg, #CF83FF 0%, #6A4BFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-left: 5vw;
+
+    font-family: 'RoadRadio', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+
+    @media screen and (max-width: 1040px) {
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+  }
+
+  &--reverse &__item {
+    color: #000 !important;
+    font-style: normal;
+    -webkit-text-fill-color: #000;
+  }
+
+}

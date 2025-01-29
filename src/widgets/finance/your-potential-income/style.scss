@@ -1,0 +1,30 @@
+.your-potential-income {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  &__select {
+    width: 100%;
+  }
+
+  &__value {
+    color: var(--blue-secondary);
+    font-family: DM Sans, sans-serif;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+  }
+
+  &__title {
+    color: var(--nav-list-disable, #A3AED0);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__buttons {
+    margin-top: 20px;
+
+    display: flex;
+  }
+}

@@ -1,0 +1,45 @@
+.levels-progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__container {
+    width: 998px;
+    max-width: 100%;
+  }
+
+  &__scale {
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--background-color-ten);
+    font-family:
+      DM Sans,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+  }
+
+  &__scale-item {
+    color: var(--blue-first);
+    opacity: 39%;
+
+    &_active {
+      opacity: 100%;
+    }
+  }
+
+  &__bar {
+    background-color: var(--background-color-thirteen);
+    border-radius: 21px;
+  }
+
+  &__bar-completed {
+    height: 21px;
+    margin-top: 12px;
+    border-radius: inherit;
+    background-color: var(--text-color-three);
+  }
+}

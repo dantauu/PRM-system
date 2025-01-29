@@ -1,0 +1,129 @@
+@use "sass:map";
+
+@function generateButtonColors(
+  $base, 
+  $light, 
+  $dark, 
+  $base-reverse: $base, 
+  $light-reverse: $light,
+  $dark-reverse: $dark, 
+  $text: #FFF,
+  $text-reverse: $text
+) {
+  @return (
+    "dark": $dark, 
+    "base": $base, 
+    "light": $light, 
+
+    "dark-reverse": $dark-reverse, 
+    "base-reverse": $base-reverse, 
+    "light-reverse": $light-reverse, 
+
+    "text": $text,
+
+    "text-reverse": $text-reverse
+  );
+}
+
+@mixin generateVariant($variant, $colors, $is-dark-theme: false) {
+  &--#{$variant}:not(:is(&--reverse)) {
+    background-color: map.get($colors, "base");
+
+    @if ($is-dark-theme) {
+      border: 1px solid map.get($colors, "light");
+    }
+
+    color: map.get($colors, "text");
+
+    &:disabled {
+      background-color: map.get($colors, "dark");
+      cursor: default;
+    }
+  
+    &:hover:not(:disabled) {
+      background-color: map.get($colors, "light");
+    }
+  
+    &:focus {
+      border-width: 2px;
+      border-color: map.get($colors, "light");
+    }
+  }
+
+
+  &--#{$variant}:is(&--reverse) {
+    background-color: map.get($colors, "base-reverse");
+
+    @if ($is-dark-theme) {
+      border: 1px solid map.get($colors, "light-reverse");
+    }
+
+    color: map.get($colors, "text-reverse");
+
+    &:disabled {
+      background-color: map.get($colors, "dark-reverse");
+      cursor: default;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: map.get($colors, "light-reverse");
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-color: map.get($colors, "light-reverse");
+    }
+  }
+}
+
+$all-colors: (
+  "primary": generateButtonColors(#11047A, #413695, #0E0362, #1B254B, #49516F, #161E3C, #fff),
+  "secondary": generateButtonColors(#E7EAEE, #ECEEF1, #B9BBBE, #E7EAEE, #ECEEF1, #B9BBBE, #626C79),
+  "success": generateButtonColors(#70E453, #8DE975, #5AB642, #70E453, #8DE975, #5AB642),
+  "danger": generateButtonColors(#FF6464, #FF8383, #CC5050, #FF6464, #FF8383, #CC5050),
+  
+  "dark-primary": generateButtonColors(#1B254B, #49516F, #161E3C, #11047A, #413695, #0E0362, #fff),
+  "dark-secondary": generateButtonColors(#626C79, #818994, #4E5661, #626C79, #818994, #4E5661, #fff),
+  "dark-success": generateButtonColors(#70E453, #8DE975, #5AB642, #70E453, #8DE975, #5AB642),
+  "dark-danger": generateButtonColors(#FF6464, #FF8383, #CC5050, #FF6464, #FF8383, #CC5050)
+);
+
+// Base Style
+.button {
+  min-height: 36px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 2px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none
+  }
+
+  &--circle {
+    border-radius: 32px
+  }
+}
+
+// Theming
+.button {
+  @include generateVariant("primary", map.get($all-colors, "primary"));
+  @include generateVariant("secondary", map.get($all-colors, "secondary"));
+  @include generateVariant("success", map.get($all-colors, "success"));
+  @include generateVariant("danger", map.get($all-colors, "danger"));
+}
+
+[data-theme="dark"] {
+  .button {
+    @include generateVariant("primary", map.get($all-colors, "dark-primary"), true);
+    @include generateVariant("secondary", map.get($all-colors, "dark-secondary"), true);
+    @include generateVariant("success", map.get($all-colors, "dark-success"), true);
+    @include generateVariant("danger", map.get($all-colors, "dark-danger"), true);
+  }
+}

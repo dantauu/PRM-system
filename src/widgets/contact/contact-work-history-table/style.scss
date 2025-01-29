@@ -1,0 +1,24 @@
+.contact-work-history-table {
+  --max-height: 300px;
+
+  max-height: var(--max-height);
+  overflow-y: hidden;
+
+  .cloud__content {
+    max-height: 100%;
+    overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  table{
+    position: relative;
+    overflow-y: auto;
+  }
+
+  table thead{
+    position: sticky;
+    top: 0;
+  }
+}

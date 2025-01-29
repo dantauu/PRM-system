@@ -1,0 +1,27 @@
+.landing-ref-title {
+  margin-top: 90px;
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  line-height: normal;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 98.05px;
+
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  @media screen and (max-width: 425px) {
+    margin-top: 48px;
+    font-size: 17px;
+    line-height: 23.15px;
+  }
+}

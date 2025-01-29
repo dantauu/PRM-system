@@ -1,0 +1,15 @@
+.header_button {
+    width: 37px;
+    height: 37px;
+    border-radius: 10px;
+    background: var(--background-color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    // &:hover {
+    //     background-color: aqua;
+    // }
+}

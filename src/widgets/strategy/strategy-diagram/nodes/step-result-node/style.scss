@@ -1,0 +1,19 @@
+.step-result-node {
+  &__info {
+    padding: 4px 8px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    overflow-x: hidden;
+
+    font-family: DM Sans, sans-serif;
+    color: var(--blue-first);
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

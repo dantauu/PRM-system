@@ -1,0 +1,31 @@
+.sort-button {
+  position: relative;
+
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #EDEFF6;
+  }
+
+  &__up {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__down {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

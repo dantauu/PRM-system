@@ -1,0 +1,64 @@
+.landing {
+  background: #000;
+  overflow-x: hidden;
+}
+
+.k1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 1618px;
+  width: 100%;
+  margin: 0px auto;
+  margin-top: 200px;
+}
+@media (max-width: 2100px) {
+  .k1 {
+    font-size: 32px;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1840px) {
+  .k1 {
+    font-size: 28px;
+    margin-top: 130px;
+  }
+}
+@media (max-width: 1840px) {
+  .k1 {
+    margin-top: 115px;
+    font-size: 26px;
+  }
+}
+@media (max-width: 1550px) {
+  .k1 {
+    margin-top: 100px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1450px) {
+  .k1 {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1250px) {
+  .k1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .k1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .k1 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=landing.css.map */

@@ -1,0 +1,18 @@
+.choose-contact-strategy {
+  &__select {
+    margin-bottom: 16px;
+  }
+
+  &__status-title {
+    color: var(--blue-first);
+    font-family: DM Sans, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__speedometer {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,15 @@
+.landing-navbar-logo {
+  width: 100%;
+  min-height: 100%;
+  padding: 0 32px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+  }
+}

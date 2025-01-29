@@ -1,0 +1,63 @@
+.strategy-diagram {
+  --diagram-width: 500px;
+  --diagram-height: 500px;
+
+  background-color: var(--background-color-four);
+  height: calc(var(--diagram-height) + 16px);
+  max-height: 80vh;
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    height: 16px;
+  }
+  &::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-color-line);
+      border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+      background: var(--background-color-four);
+      border-radius: 10px;
+      padding-right: 12px;
+      padding-left: 12px;
+  }
+
+  &--skeleton {
+    overflow: hidden;
+  }
+
+  .bi.bi-diagram {
+    background-color: transparent;
+    min-width: 100%;
+    width: var(--diagram-width);
+    max-height: var(--diagram-height);
+    border: none;
+    box-shadow: none;
+  }
+  
+  .node {
+    background-color: var(--background-color-four);
+    padding: 8px;
+    border: 1px solid var(--nav-list-disable);
+    border-radius: 12px;
+  }
+
+  .skeleton-node__info {
+    padding: 4px 8px;
+
+    display: flex;
+    align-items: center;
+  
+    .skeleton-node__name {
+      overflow-x: hidden;
+
+      font-family: DM Sans, sans-serif;
+      color: var(--blue-first);
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

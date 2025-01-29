@@ -1,0 +1,27 @@
+.auth-button {
+  background-color: #2E016C;
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+
+  color: #FFF;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #431A7B;
+  }
+
+  &--disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}

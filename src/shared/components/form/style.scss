@@ -1,0 +1,15 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+
+  &__footer {
+    margin-top: 20px;
+
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+}

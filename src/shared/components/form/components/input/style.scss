@@ -1,0 +1,55 @@
+.my-input {
+  &__input {
+    background-color: var(--background-first);
+    // background-color: white !important;
+
+    color: var(--blue-secondary) !important;
+    // color: black !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+
+    &::placeholder {
+      color: var(--nav-list-disable, #a3aed0);
+      font-family:
+        DM Sans,
+        sans-serif;
+      font-size: 14px;
+      font-style: normal;
+    }
+
+    // &::-webkit-calendar-picker-indicator {
+
+    // }
+  }
+
+  .form-label {
+    color: var(--blue-first);
+  }
+}
+
+[data-theme='dark'] {
+  .my-input {
+    &__input {
+      background-color: transparent;
+
+      color: var(--input-color);
+      font-size: 16px;
+      line-height: 30px;
+
+      &::placeholder {
+        color: var(--nav-list-disable, #a3aed0);
+        font-size: 14px;
+      }
+
+      &:focus {
+        background-color: transparent;
+
+        color: var(--input-color);
+      }
+
+      &:disabled {
+        background-color: var(--background-color-three);
+      }
+    }
+  }
+}

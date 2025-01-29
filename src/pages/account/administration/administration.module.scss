@@ -1,0 +1,83 @@
+.description p {
+  font-size: 14px;
+  font-family: Open Sans;
+  color: #a3aed0;
+  margin-top: -20px;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row + .row {
+    padding-top: 28px;
+    padding-bottom: 10px;
+}
+
+.buttons_row {
+  font-size: 14px;
+
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.administrationInput {
+  // background-color: #d9d6d6;
+  border-radius: 20px;
+  border: 1px solid #e0e5f2;
+  width: 306px;
+  height: 38px;
+  padding: 5px 24px;
+//   margin: 15px 0px;
+}
+
+.administrationInputDate {
+  border-radius: 20px;
+  border: 1px solid #e0e5f2;
+  width: 306px;
+  height: 38px;
+  padding: 5px 24px;
+  margin: 15px 0px;
+  //   color: #a3aed0;
+}
+
+.administrationInputDateCustomColor {
+  border-radius: 20px;
+  border: 1px solid #e0e5f2;
+  width: 306px;
+  height: 38px;
+  padding: 5px 24px;
+//   margin: 15px 0px;
+  color: #a3aed0;
+}
+
+.administrationInputDate::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.administrationInputDateCustomColor::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+.administrationInput::placeholder {
+    color: #a3aed0
+}
+
+@media (max-width: 1328px) {
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+}
+
+@media (max-width: 425px) {
+    .buttons_row {
+        gap: 10px;
+      }
+}

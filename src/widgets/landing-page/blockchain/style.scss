@@ -1,0 +1,38 @@
+.blockchain {
+  &__running-line {
+    position: relative;
+    z-index: 0;
+  }
+
+  &__marquee {
+    background: linear-gradient(180deg, #CF83FF 0%, #7A54FF 100%);
+    opacity: 0.3;
+
+    .marquee-item {
+      color: #000 !important;
+      font-family: "RoadRadio", sans-serif;
+      font-size: 86px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-left: 185px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -53px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 46px;
+  }
+
+  &__items {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,19 @@
+.like-strategy-button {
+  background-color: var(--background-color-four);
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text-color-three);
+
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: var(--background-color-three);
+  }
+}

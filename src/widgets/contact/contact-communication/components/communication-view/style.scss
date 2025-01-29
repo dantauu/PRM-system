@@ -1,0 +1,19 @@
+.communication-view {
+  &__section {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-header {
+    padding: 4px 0;
+  }
+
+  &__section-footer {
+    margin-top: 8px;
+
+    display: flex;
+  }
+}

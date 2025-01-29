@@ -1,0 +1,28 @@
+.market-place-activity__items {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  &__item {
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+  &__item-price {
+    color: var(--text-color-three);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 576px) {
+    --item-width: calc(100vw - 24px - 24px);
+
+    &__item {
+      min-width: var(--item-width);
+      max-width: var(--item-width);
+    }
+  }
+}

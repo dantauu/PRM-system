@@ -1,0 +1,17 @@
+.speedometer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__label {
+    //styleName: Body Text/Small/Body Small (Medium);
+    color: var(--nav-list-disable);
+    font-family:
+      DM Sans,
+      sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}

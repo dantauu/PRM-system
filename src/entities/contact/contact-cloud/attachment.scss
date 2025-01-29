@@ -1,0 +1,16 @@
+.attachment-wrapper{
+  position: absolute;
+  background-color: var(--background-color-secondary);
+  border-radius: 100px;
+  top: 60px;
+  left: 66px;
+  
+  .icon{
+    color: var(--text-color-three);
+    cursor: pointer;
+    padding: 5px;
+  }
+  .attachment-input{
+    display: none;
+  }
+}

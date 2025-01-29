@@ -1,0 +1,211 @@
+.partner-management {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  // Left
+  &__left {
+    flex: 1; 
+  }
+
+  &__text {
+    margin-top: 32px;
+
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__text {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    &__left {
+      padding: 0 10%;
+    }
+
+    &__title,
+    &__text {
+      text-align: center;
+    }
+  }
+
+  // Right
+  &__right {
+    min-width: 600px;
+    max-width: 600px;
+
+    margin-left: 200px;
+  }
+
+  &__image {
+    position: relative;
+    height: 560px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      min-width: 903px;
+      min-height: 560px;
+
+      object-fit: contain;
+    }
+  }
+
+  &__buttons {
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__button-item {
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__coming-soon {
+    margin-top: 20px;
+
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  &__button {
+    display: block;
+
+    background: rgba(126, 126, 126, 0.29);
+    min-height: 72px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 12px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: #FFF;
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 22px;
+
+    transition: background 0.4s;
+
+    &:hover {
+      background: hsla(0,0%,49%,.644);
+    }
+  }
+
+  &__play-market-icon {
+    background: url("../../../assets/landing/images/gPlay.svg") no-repeat center center/cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+
+  &__app-store-icon {
+    background: url("../../../assets/landing/images/aStore.svg") no-repeat center center/cover;
+    width: 31px;
+    height: 38px;
+    margin-right: 12px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__right {
+      flex: 1;  
+      min-width: auto;
+      max-width: auto;
+      margin-left: 160px;
+    }
+    
+    &__image {
+      height: 480px;
+      
+      img {
+        min-width: 720px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    &__right {
+      flex: 1;  
+      min-width: 100%;
+      max-width: auto;
+    
+      margin-top: 48px;
+      margin-left: 0;
+    }
+
+    &__image {
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+
+      img {
+        position: static;
+        
+        min-width: 60%;
+        max-width: 60%;
+        min-height: auto;
+      }
+    }
+    
+    &__buttons {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__image {
+      img {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    &__buttons {
+      margin-top: 48px;
+      
+      flex-direction: column;
+    }
+
+    &__button-item {
+      width: 100%;
+      margin-bottom: 32px;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__button {
+      width: 100%;
+
+      justify-content: center;
+    }
+
+    &__coming-soon {
+      margin-top: 8px;
+    }
+  }
+}

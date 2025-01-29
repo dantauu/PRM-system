@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import '~bootstrap/scss/_reboot';
+@import "~bootstrap/scss/_root";
+@import '~bootstrap/scss/_forms';
+@import '~bootstrap/scss/_buttons';
+@import '~bootstrap/scss/_close';
+@import '~bootstrap/scss/_alert';
+@import '~bootstrap/scss/_grid';
+@import '~bootstrap/scss/_spinners';
+@import '~bootstrap/scss/_modal';
+// @import '~bootstrap/scss/bootstrap';
+
+#root {
+  position: relative;
+  z-index: 0;
+}
+
+#modals {
+  position: relative;
+  z-index: 1051;
+}
+
+.custom-row {
+    margin-bottom: -1.5rem;
+}
+
+.custom-row > * {
+    margin-bottom: 1.5rem;
+}
+
+.apexcharts-tooltip {
+  background-color: var(--background-color-four) !important;
+}
+
+.apexcharts-tooltip-title {
+  background-color: var(--background-color-four) !important;
+
+  color: var(--text-color-secondary);
+}
+
+// Modals
+.modal-content {
+  background-color: var(--background-color-first);
+}
+
+.modal-header {
+  border-bottom-color: var(--nav-list-disable);
+
+  .btn-close {
+    --bs-btn-close-color: var(--text-color-secondary);
+  }
+}
+
+.modal-title {
+  font-size: 24px;
+
+  color: var(--text-color-secondary);
+}
+
+.modal-body {
+  color: var(--text-color-secondary);
+}
+
+.modal-footer {
+  border-top-color: var(--nav-list-disable);
+}
+
+// [data-theme="dark"] {
+// }

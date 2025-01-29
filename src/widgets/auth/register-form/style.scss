@@ -1,0 +1,11 @@
+.register-form {
+  &__terms {
+    display: flex;
+
+    color: var(--blue-first);
+
+    & > *:first-child {
+      margin-right: 12px;
+    }
+  }
+}

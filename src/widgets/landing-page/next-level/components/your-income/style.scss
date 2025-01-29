@@ -1,0 +1,296 @@
+.your-income {
+  max-width: 100%;
+
+  // Header
+  &__header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1.17px;
+  }
+
+  &__month {
+    margin-left: 48px;
+
+    color: #AB71F4;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &__chevron {
+    background: url("../../../../../assets/landing/images/arrow-down.svg") no-repeat center center/contain;
+    height: 12px;
+    width: 22px;
+    margin-left: 12px;
+  }
+
+  &__per-day {
+    flex: 1;
+
+    color: #FFF;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2.565px;
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1025px) {
+    &__title {
+      font-size: 32px;
+    }
+  
+    &__month {
+      font-size: 24px;
+    }
+  
+    &__chevron {
+      height: 12px;
+      width: 18px;
+    }
+  
+    &__per-day {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__header {
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      width: 100%;
+      font-size: 32px;
+    }
+  
+    &__month {
+      margin-left: 0;
+      margin-top: 8px;
+
+      font-size: 18px;
+    }
+  
+    &__chevron {
+      height: 12px;
+      width: 18px;
+    }
+  
+    &__per-day {
+      font-size: 18px;
+    }
+  }
+
+  // Chart
+  &__chart {
+    margin-top: 24px;
+  }
+  
+  &__chart-image {
+    max-width: 100%;
+  }
+
+  &__blob {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 100px;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      z-index: 0;
+      top: 150px;
+      left: 50px;
+      transform: translateX(-50%) translateY(-50%);
+
+      background: linear-gradient(180deg, #183398 0%, #322B54 70.14%);
+      width: 437px;
+      height: 437px;
+      border-radius: 720px;
+      filter: blur(300px);
+    }
+  }
+
+  &__blob-img {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 50px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1025px) {
+    &__blob {
+      margin-top: 60px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__blob-img {
+      top: 10vw;
+      left: 5vw;
+      width: 15vw;
+      height: 15vw;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__chart {
+      aspect-ratio: 16 / 9;
+    }
+    
+    &__blob {
+      margin-top: 60px;
+
+      &::before {
+        content: '';
+
+        top: 80px;
+        left: 24px;
+
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    &__blob-img {
+      position: absolute;
+      z-index: 1;
+      top: 80px;
+      left: 24px;
+      width: 140px;
+      height: 140px;
+      transform: translateX(-50%) translateY(-50%);
+    } 
+  }
+  // Price
+  &__price {
+    margin-top: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price-value {
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 64px;
+    font-weight: 700;
+  }
+
+  &__price-chart {
+    background: url("../../../../../assets/landing/images/mini-graph.svg") no-repeat center center/contain;
+    width: 173px;
+    height: 80px;
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1025px) {
+    &__price {
+      margin-top: 60px;
+    }
+  
+    &__price-value {
+      font-size: 48px;
+    }
+  
+    &__price-chart {
+      height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    &__price {
+      margin-top: 60px;
+    }
+  
+    &__price-value {
+      font-size: 32px;
+    }
+  
+    &__price-chart {
+      width: 120px;
+      height: 48px;
+    }
+  }
+  // Total
+  &__total {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__total-spent {
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  &__total-date {
+    color: #7C7C7C;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.9px;
+  }
+
+  &__total-right {
+    text-align: right;
+  }
+  &__total-percent {
+    color: #0BAF07;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  &__total-last-month {
+    color: #7C7C7C;
+    font-family: Manrope;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 2.185px;
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1025px) {
+    &__total-spent {
+      font-size: 28px; 
+    }
+    &__total-date {
+      font-size: 18px;
+    }
+  
+    &__total-percent {
+      font-size: 28px; 
+    }
+    &__total-last-month {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &__total-spent {
+      font-size: 24px; 
+    }
+    &__total-date {
+      font-size: 14px;
+    }
+  
+    &__total-percent {
+      font-size: 24px; 
+    }
+    &__total-last-month {
+      font-size: 14px;
+    }
+  }
+}

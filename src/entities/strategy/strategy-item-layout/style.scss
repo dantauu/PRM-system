@@ -1,0 +1,60 @@
+.strategy-item-layout {
+  position: relative;
+
+  background-color: var(--background-color-four);
+  padding: 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__like-button {
+    position: absolute;
+    top: 36px;
+    right: 36px;
+    user-select: none;
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+  }
+
+  &__text {
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "DM Sans", sans-serif;
+  }
+  &__title {
+    color: var(--blue-secondary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    letter-spacing: -0.36px;
+  }
+  &__subtitle {
+    color: var(--nav-list-disable);
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+  }
+
+  &__buttons {
+    margin-top: 16px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left-button {}
+  &__right-button {
+    margin-left: 12px;
+  }
+}

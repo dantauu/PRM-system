@@ -1,0 +1,24 @@
+.communication-active-status {
+  margin-bottom: 16px;
+
+  display: flex;
+
+  &__indicator {
+    background-color: currentColor;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border-radius: 4px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__name {
+    color: var(--blue-first);
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

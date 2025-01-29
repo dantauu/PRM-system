@@ -1,0 +1,62 @@
+.horizontal-scrollable-items {
+  max-width: 100%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: DM Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__cotnent {
+    margin-top: 20px;
+    margin-right: -24px;
+    margin-left: -24px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 12px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-color-line);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: var(--background-color-four);
+        border-radius: 10px;
+        margin-right: 24px;
+        margin-left: 24px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+  }
+
+  &__items {
+    padding-right: 24px;
+    padding-left: 24px;
+
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+
+    &::after {
+      content: '';
+      min-width: 24px;
+    }
+
+    & > * {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

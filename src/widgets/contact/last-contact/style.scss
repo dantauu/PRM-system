@@ -1,0 +1,71 @@
+.last-contact {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr min-content; 
+  gap: 20px; 
+  grid-template-areas: 
+    "content speed-test"
+    "buttons speed-test"; 
+
+  &--column {
+    grid-template-columns: 1fr; 
+    grid-template-rows: min-content min-content min-content; 
+    grid-template-areas: 
+      "content"
+      "speed-test"
+      "buttons"; 
+  }
+
+  &__content {
+    max-width: 100%;
+    overflow-x: hidden;
+    grid-area: content;
+
+    display: flex;
+    align-items: center;
+  }
+  
+  &--column &__content {
+    justify-content: center;
+  }
+
+  &__info {
+    margin-left: 16px;
+  }
+
+  &__name,
+  &__status {
+    color: var(--nav-list-disable);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__speed-test {
+    grid-area: speed-test;
+
+  }
+
+  &__buttons {
+    grid-area: buttons;
+
+    margin-bottom: -12px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > * {
+      margin-right: 12px;
+      margin-bottom: 12px;
+      margin-left: 0 !important;
+    }
+  }
+  
+  &--column &__buttons {
+    justify-content: center;
+  }
+}

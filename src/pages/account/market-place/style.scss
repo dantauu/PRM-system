@@ -1,0 +1,21 @@
+.market-place-activity {
+  &__header {
+    margin-top: 27px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family:
+      DM Sans,
+      sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  &__right {
+  }
+}

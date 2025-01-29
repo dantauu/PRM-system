@@ -1,0 +1,14 @@
+.edit-strategy-form {
+  &__footer {
+    display: flex;
+    
+    & > * {
+      margin-right: 12px;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

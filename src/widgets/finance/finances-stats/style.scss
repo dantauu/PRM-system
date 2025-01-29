@@ -1,0 +1,22 @@
+.finance-stats {
+  
+  &__right-wrapper {
+    display: flex;
+    gap: 10px;
+
+    .right-wrapper{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: end;
+      p{
+        margin: 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1060px) {
+    .finance-stats__right-wrapper{
+      flex-direction: column;
+    }
+  }

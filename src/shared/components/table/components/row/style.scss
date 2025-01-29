@@ -1,0 +1,42 @@
+.table-row {
+  width: 100%;
+  margin: 0 -12px;
+  padding: 0 8px;
+
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+
+  &__item {
+    flex: 1 0;
+    min-width: 200px;
+    min-height: 100%;
+
+    padding: 12px 12px;
+
+    color: var(--blue-first);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    &--edit {
+      cursor: pointer;
+    }
+  
+    &--edit:hover {
+      color: var(--text-color-three);
+    }
+  }
+
+  &:hover &__item {
+    background-color: var(--background-color-three);
+  }
+
+  &--clickable &__item {
+    cursor: pointer;
+  }
+
+  &--clickable:hover &__item {
+    color: var(--text-color-three);
+  }
+}

@@ -1,0 +1,44 @@
+.Title {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 72px;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+}
+@media (max-width: 2100px) {
+  .Title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 1840px) {
+  .Title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 1720px) {
+  .Title {
+    font-size: 44px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1500px) {
+  .Title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1250px) {
+  .Title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 800px) {
+  .Title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 620px) {
+  .Title {
+    font-size: 28px;
+  }
+}/*# sourceMappingURL=Title.css.map */

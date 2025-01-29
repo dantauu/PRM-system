@@ -1,0 +1,37 @@
+.edit-landing {
+  &__input {
+    margin-top: 0;
+
+    .inputCountainer {
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    
+    display: flex;
+
+    & > * {
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      align-items: stretch;
+
+      & > * {
+        margin-right: 0;
+        margin-bottom: 12px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

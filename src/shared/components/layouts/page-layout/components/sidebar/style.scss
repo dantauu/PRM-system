@@ -1,0 +1,162 @@
+@import "./nav-item.scss";
+
+.sidebar-space {
+  position: relative;
+  z-index: 0;
+
+  width: 300px;
+
+
+  @media screen and (max-width: 1200px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+
+    &--open {
+      pointer-events: all;
+      
+    }
+
+  }
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; 
+}
+
+
+
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+  overflow-y: scroll;
+
+  background-color: var(--background-color-first);
+  width: 300px;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  
+
+  @media screen and (max-width: 1200px) {
+    box-shadow: 16px 0 16px rgba(0, 0, 0, 0);
+
+    transition: 0.3s;
+
+    transform: translateX(-100%);
+
+    &--open {
+      box-shadow: 16px 0 16px rgba(0, 0, 0, 0.1);
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    right: 32px;
+    
+    width: auto;
+  }
+
+  @media screen and (max-width: 375px) {
+    right: 0;
+  }
+
+  // Logo
+  &__logo {
+    width: 100%;
+    min-height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo-image {
+    background: url("../../../../../../assets/account/images/prm-logo-2.png") no-repeat center center/cover;
+    max-width: 210px;
+    width: 100%;
+    height: 24px;
+
+    [data-theme="dark"] & {
+      background: url("../../../../../../assets/account/images/prm4-logo-darkTheme.png") no-repeat center center/cover;
+    }
+  }
+
+  // Separator
+  &__separator {
+    background: var(--background-color-secondary);
+    width: 100%;
+    height: 1px;
+  }
+
+  // Nav
+  &__nav-items {
+    margin-top: 36px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-item {
+    width: 100%;
+    height: 36px;
+
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav-space {
+    display: none;
+  }
+
+  &__activity {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__nav-items {
+      flex: 1;
+
+      padding-bottom: 24px;
+    }
+
+    &__nav-space {
+      flex: 1;
+
+      padding: 16px 32px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      
+    }
+  }
+
+  // Blob
+  &__blob {
+    flex: 0;
+    width: 100%;
+    padding: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__blob {
+      display: none;
+    }
+  }
+}

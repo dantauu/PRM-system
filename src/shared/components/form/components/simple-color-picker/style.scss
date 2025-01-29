@@ -1,0 +1,68 @@
+.simple-color-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__button {
+    position: relative;
+    background:  var(--active-side-navbar-color);
+    border-radius: 32px;
+    min-width: 32px;
+    height: 32px;
+  }
+  &__title {
+    margin-bottom: 10px;
+    color: var(--blue-first);
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -16px;
+  }
+
+  &__item {
+    position: relative;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+
+    &:not(&--skeleton) {
+      cursor: pointer;
+    }
+
+    &--skeleton {
+      overflow: hidden;
+      & > * {
+        font-size: 32px;
+        line-height: 32;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 40px;
+      height: 40px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+
+      transition: 0.3s;
+    }
+
+
+    &:not(&--active):not(&--skeleton):hover::after {
+      border-color: var(--grey-first);
+    }
+
+    &--active::after {
+      border-color: var(--active-side-navbar-color);
+    }
+  }
+}

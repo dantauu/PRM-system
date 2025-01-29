@@ -1,0 +1,19 @@
+.active-team-stats {
+  
+  &__right-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    .right-wrapper{
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      justify-content: end;
+      
+      p{
+        margin: 0px;
+      }
+    }
+  }
+}
